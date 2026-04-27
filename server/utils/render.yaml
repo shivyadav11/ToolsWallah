@@ -1,0 +1,51 @@
+# =========================================================
+#  render.yaml — Render.com Auto-Deploy Config
+#  Docs: https://render.com/docs/render-yaml
+# =========================================================
+
+services:
+  - type: web
+    name: toolhub-api
+    runtime: node
+    region: singapore          # Closest region to India
+
+    rootDir: server            # Folder inside your repo
+
+    buildCommand: npm install
+    startCommand: npm start
+
+    healthCheckPath: /api/health
+
+    envVars:
+      - key: NODE_ENV
+        value: production
+
+      - key: PORT
+        value: 10000           # Render assigns this automatically
+
+      - key: CLIENT_URL
+        sync: false            # Set manually in Render dashboard
+
+      - key: ADMIN_API_KEY
+        generateValue: true    # Render auto-generates a secure key
+
+      - key: MAX_FILE_SIZE_MB
+        value: 25
+
+      - key: FILE_TTL_MINUTES
+        value: 60
+
+      - key: RATE_LIMIT_WINDOW_MS
+        value: 900000
+
+      - key: RATE_LIMIT_MAX
+        value: 100
+
+      - key: LOG_LEVEL
+        value: info
+
+    # Persistent disk for temp uploads on Render
+    disk:
+      name: toolhub-uploads
+      mountPath: /opt/render/project/src/server/uploads
+      sizeGB: 1                # Upgrade to 5GB when traffic grows

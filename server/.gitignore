@@ -1,0 +1,42 @@
+# =========================================================
+#  server/.gitignore
+#  Ye files GitHub pe upload NAHI hongi
+# =========================================================
+
+# ── Environment variables (MOST IMPORTANT) ───────────────
+.env
+.env.local
+.env.production
+.env.development
+
+# ── Dependencies ──────────────────────────────────────────
+node_modules/
+
+# ── Temp uploaded files (keep folder, ignore files) ──────
+uploads/temp/*
+!uploads/temp/.gitkeep
+
+# ── Log files (keep folder, ignore files) ────────────────
+logs/*
+!logs/.gitkeep
+
+# ── Analytics data (keep folder, ignore files) ───────────
+data/*
+!data/.gitkeep
+
+# ── OS files ─────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor files ──────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ── Build/cache ───────────────────────────────────────────
+dist/
+.cache/
+*.log
+npm-debug.log*

@@ -1,0 +1,40 @@
+# =========================================================
+#  toolhub/.gitignore (ROOT)
+#  Project root level gitignore
+# =========================================================
+
+# ── Environment variables ─────────────────────────────────
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+
+# ── Dependencies ──────────────────────────────────────────
+**/node_modules/
+
+# ── Build output ──────────────────────────────────────────
+**/dist/
+**/build/
+
+# ── Uploaded files ────────────────────────────────────────
+server/uploads/temp/*
+!server/uploads/temp/.gitkeep
+
+# ── Logs ─────────────────────────────────────────────────
+server/logs/*
+!server/logs/.gitkeep
+
+# ── Analytics ────────────────────────────────────────────
+server/data/*
+!server/data/.gitkeep
+
+# ── OS ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Editor ───────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.log
