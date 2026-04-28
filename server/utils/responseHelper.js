@@ -14,7 +14,7 @@ const fileResponse = (res, filename, message = "Done") => {
     success: true,
     message,
     filename,
-    downloadUrl: `${BASE_URL}/uploads/temp/${filename}`,
+    downloadUrl: `https://toolswallah-backend.onrender.com/uploads/temp/${filename}`,
   });
 };
 
