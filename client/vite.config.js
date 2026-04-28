@@ -7,11 +7,11 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/api': {
-        target: 'https://toolswallah-backend.onrender.com/',
+        target: 'http://localhost:5000/',
         changeOrigin: true,
       },
       '/uploads': {
-        target: 'https://toolswallah-backend.onrender.com/',
+        target: 'https://http://localhost:5000/',
         changeOrigin: true,
       }
     }

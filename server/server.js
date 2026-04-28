@@ -66,7 +66,7 @@ app.use("/api/ats", atsRoutes);
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 app.use((req, res) => {
-  res.status(404).json({ success: false, message: "Route not found" });
+  res.status(404).json({ success: false, message: "Run Done" });
 });
 app.use(errorHandler);
 
