@@ -73,10 +73,10 @@ const [activeCategory, setActiveCategory] = useState(
           {/* Stats */}
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px', marginBottom: '48px' }}>
             {[
-              ['13+', 'Free Tools'],
-              ['100%', 'Free Forever'],
-              ['1 Hour', 'Auto File Delete'],
-              ['0', 'Signup Required'],
+              // ['13+', 'Free Tools'],
+              // ['100%', 'Free Forever'],
+              // ['1 Hour', 'Auto File Delete'],
+              // ['0', 'Signup Required'],
             ].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.75rem', fontWeight: '700', color: '#48be89' }}>{num}</div>
