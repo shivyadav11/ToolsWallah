@@ -91,7 +91,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-gray-600 text-sm">
-            © 2024 ToolHub. Free online tools — no registration required.
+            © 2026 ToolHub Build By Shiv! A Free online tools — no registration required.
           </p>
           <p className="text-gray-600 text-xs">
             Files are auto-deleted after 1 hour 🔒

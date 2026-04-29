@@ -54,7 +54,7 @@ const [activeCategory, setActiveCategory] = useState(
             lineHeight: '1.2', marginBottom: '24px',
             letterSpacing: '-0.02em'
           }}>
-            All Tools You Need,{' '}
+            All  Tools  You  Need,{' '}
             <span style={{
               background: 'linear-gradient(to right, #48be89, #7dd8ad)',
               WebkitBackgroundClip: 'text',
@@ -66,17 +66,17 @@ const [activeCategory, setActiveCategory] = useState(
           </h1>
 
           <p style={{ color: '#9ca3af', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.7' }}>
-            PDF tools, image tools, developer utilities — everything free,
-            fast and secure. No registration. No limits.
+            Welcome With Love!
+
           </p>
 
           {/* Stats */}
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '40px', marginBottom: '48px' }}>
             {[
-              ['13+', 'Free Tools'],
-              ['100%', 'Free Forever'],
-              ['1 Hour', 'Auto File Delete'],
-              ['0', 'Signup Required'],
+              // ['13+', 'Free Tools'],
+              // ['100%', 'Free Forever'],
+              // ['1 Hour', 'Auto File Delete'],
+              // ['0', 'Signup Required'],
             ].map(([num, label]) => (
               <div key={label} style={{ textAlign: 'center' }}>
                 <div style={{ fontSize: '1.75rem', fontWeight: '700', color: '#48be89' }}>{num}</div>
