@@ -54,7 +54,7 @@ const [activeCategory, setActiveCategory] = useState(
             lineHeight: '1.2', marginBottom: '24px',
             letterSpacing: '-0.02em'
           }}>
-            All Tools ❤️ You Need,{' '}
+            All  Tools  You  Need,{' '}
             <span style={{
               background: 'linear-gradient(to right, #48be89, #7dd8ad)',
               WebkitBackgroundClip: 'text',
@@ -66,7 +66,7 @@ const [activeCategory, setActiveCategory] = useState(
           </h1>
 
           <p style={{ color: '#9ca3af', fontSize: '1.1rem', maxWidth: '600px', margin: '0 auto 40px', lineHeight: '1.7' }}>
-            Welcome With ❤️
+            Welcome With Love!
 
           </p>
 
